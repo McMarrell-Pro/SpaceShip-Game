@@ -76,8 +76,8 @@ function draw() {
     }
   }
   else if(gameState === END){
-    meteroidGroup.setVelocityXEach(0);
-    coinGroup.setVelocityXEach(0);
+    meteroidGroup.destroyEach();
+    coinGroup.destroyEach();
     spaceBG.setVelocity(0,0);
     spaceShip.setVelocity(0,0);
     restartButton.visible = true;
